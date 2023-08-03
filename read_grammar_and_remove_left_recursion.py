@@ -1,6 +1,6 @@
 ''' Reading Grammar from File '''
 
-f = open('grammar.txt','r')
+f = open('input_grammar.txt','r')
 Grammar = {}
 start = 'S'
 k = 0
@@ -114,25 +114,22 @@ def Remove_left_Recursion(new_Grammar):
 ''' Removing left recursion from the Grammar~~~~~~~~~~~~~~~~~~~~~~~'''
 
 Remove_left_Recursion(new_Grammar) 
-
-file = open("grammar_after_removing_left _recursion.txt",'w')
-
-file.write("Given grammar is \n")
+print("Given grammar is  ~\n")
 for each in lines:
-    file.write(each)
+    print(each)
 
-file.write("\nWe rename Grammar variables as ~\n")
+print("\nWe rename Grammar variables as ~\n")
 for each in rename:
-    file.write(each+" = "+rename[each]+'\n')
+    print(each+" = "+rename[each]+'\n')
 
-file.write('\n\nAfter removing Left recursion new renamed Grammar is ~ \n')
+print('\n\nAfter removing Left recursion(if exist) new renamed Grammar is ~ \n')
+print("S -> A1\n")
 for var in new_Grammar:
     pro = var+" -> "
     for each in new_Grammar[var]:
         for sym in each:
             pro+=sym+' '
         pro+='| '
-    file.write(pro[:-3]+'\n')        
-file.close()
+    print(pro[:-3]+'\n')        
 
 Grammar = new_Grammar

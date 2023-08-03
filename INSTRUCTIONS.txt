@@ -1,0 +1,18 @@
+install python module PrettyPrint with command ~
+-> pip install print_tree
+
+first write your CFG in input_grammar.txt file (first line is number of product rules in grammar and following lines are rules(keep maintain require sysntax of input rules))
+
+then write the require string which we want to check in input_string.txt file
+
+run these command in terminal with correct directory ~
+
+-> python3 create_dynamic_code.py
+~~~~~~~~~~~ see the updated grammar in terminal  ~~~~~~~~~~~~~
+
+-> python3 execute.py 
+
+and see the output of code in console(terminal)
+
+if (string is Accepted) -> then there is a parsar tree print in console for input string 
+else -> output as Rejected

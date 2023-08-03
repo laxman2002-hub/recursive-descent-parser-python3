@@ -1,9 +1,0 @@
-Given grammar is 
-E -> E + E | E * E | id 
-We rename Grammar variables as ~
-E = A1
-
-
-After removing Left recursion new renamed Grammar is ~ 
-A1 -> id A1'
-A1' -> + A1 A1' | * A1 A1' | ^
