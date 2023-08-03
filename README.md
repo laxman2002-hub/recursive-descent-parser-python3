@@ -3,7 +3,7 @@ recursive descent parser which take a CFG as input and generate dynamic code whi
 
 install python module PrettyPrint with command ~
 
--> pip install print_tree
+```-> pip install print_tree```
 
 first write your CFG in input_grammar.txt file (first line is number of product rules in grammar and following lines are rules(keep maintain require sysntax of input rules))
 then write the require string which we want to check in input_string.txt file
